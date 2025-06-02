@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken and Banana's Wobbly Quest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Light blue background */
+        }
+        .storybook-page {
+            background-color: #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .page-number {
+            color: #6b7280; /* Gray text for page number */
+        }
+        .story-text {
+            color: #374151; /* Darker gray for story text */
+            line-height: 1.6;
+        }
+        .title-card {
+            background: linear-gradient(135deg, #fcd34d, #f59e0b); /* Yellow-orange gradient */
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .author-info {
+            color: #fef3c7; /* Lighter yellow for author info */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+
+    <div class="title-card w-full max-w-2xl mx-auto rounded-xl p-8 mb-12 text-center shadow-lg">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Chicken and Banana's Wobbly Quest</h1>
+        <p class="text-lg sm:text-xl font-semibold author-info mb-2">By Rocky Hollen and Jenn Krenik</p>
+        <p class="text-md sm:text-lg author-info mb-2">Images by Cavin Krenik</p>
+        <p class="text-md sm:text-lg author-info mb-2">Editing by the Collective Mind</p>
+        <p class="text-md sm:text-lg author-info">Published by L2 Publishing</p>
+        <img src="cover.png" alt="Chicken and Banana" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='cover.png';">
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 1</p>
+        <img src="image1.png" alt="Chicken and Banana" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image1.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            In Whizzy-Woo Forest, where colors all zoom,<br>
+            Lived Chicken, a hen with a bright red plume!<br>
+            She clucked and she solved with a peck and a grin,<br>
+            So clever, so sprightly, her heart all a-spin.<br>
+            But Banana, oh my, with his glasses so round,<br>
+            Would trip and then tumble right down to the ground!<br>
+            His peel was so shiny, his heart was so cheery,<br>
+            He giggled and wiggled, though falling was dreary.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 2</p>
+        <img src="image2.png" alt="Chicken met Banana" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image2.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            One day on a path that was sparkly and bright,<br>
+            Chicken met Banana—oh, what a sight!<br>
+            “Why, hello!” clucked Chicken, “Let’s be pals, you and me!”<br>
+            Banana just beamed, “Yes, oh, yippee-dee-dee!”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 3</p>
+        <img src="image3.png" alt="Squeaky Squirrel" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image3.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            But then came a cry, so tiny, so shrill,<br>
+            From Squeaky Squirrel on a polka-dot hill.<br>
+            “My acorn hat’s gone! It’s shiny, it’s fine!”<br>
+            Chicken and Banana said, “We’ll make it all mine!”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 4</p>
+        <img src="image4.png" alt="Bouncy-Bop Bridge" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image4.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Off they went skipping to the Bouncy-Bop Bridge,<br>
+            With wobbles and hops like a dance on a ridge.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 5</p>
+        <img src="image5.png" alt="Banana slipped" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image5.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Banana slipped fast with a “Whoops!” and a “Whee!”<br>
+            He flopped on his peel, crying, “Oh, clumsy me!”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 6</p>
+        <img src="image6.png" alt="Chicken helped Banana" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image6.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Chicken just clucked, “Up you go, don’t you frown!”<br>
+            And she helped her friend rise with a skip and a bound.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 7</p>
+        <img src="image7.png" alt="Tickle-Tree Sea" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image7.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Through Whizzy-Woo Forest, they scampered with glee,<br>
+            To find that lost hat by the Tickle-Tree Sea.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 8</p>
+        <img src="image8.png" alt="Grumpy Grape" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image8.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Then up rolled Grumpy Grape, all purple and sour,<br>
+            He grumbled and mumbled for hour after hour.<br>
+            “That hat’s in the Grove, where the tickle-trees grow,<br>
+            But those leaves will tickle from your head to your toes!”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 9</p>
+        <img src="image9.png" alt="Chicken nervous, Banana brave" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image9.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Chicken looked nervous, her comb all a-quiver,<br>
+            But Banana just laughed, “We’ll be brave, won’t we, shiver?”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 10</p>
+        <img src="image10.png" alt="Tickle-Tree Grove" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image10.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            To Tickle-Tree Grove they dashed with a zoom,<br>
+            Where leaves giggled wildly and danced in the gloom.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 11</p>
+        <img src="image11.png" alt="Banana slipped on mushroom" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image11.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Banana then slipped on a mushroom so slick,<br>
+            He rolled and he tumbled, oh, what a trick!
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 12</p>
+        <img src="image12.png" alt="Chicken dodged leaves" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image12.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Chicken just clucked, “Let’s solve this, and quick!”<br>
+            She dodged tickling leaves with a twirl and a flick.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 13</p>
+        <img src="image13.png" alt="Banana cheered Chicken" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image13.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Banana cheered loud, his heart big and bold,<br>
+            “Keep going, dear Chicken, you’re worth more than gold!”
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 14</p>
+        <img src="image14.png" alt="Spotted the hat" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image14.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            At last, in a tree with a shimmer and shine,<br>
+            They spotted the hat—oh, it looked so divine!
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 15</p>
+        <img src="image15.png" alt="Running back to Squeaky" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image15.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Back to Squeaky they ran, with the hat held up high,<br>
+            She squealed and she danced ‘neath the Whizzy-Woo sky.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 16</p>
+        <img src="image16.png" alt="Forest partied" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image16.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            The forest all partied ‘til the moon gave a glow,<br>
+            With giggling flowers and a polka-dot show.
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 17</p>
+        <img src="image17.png" alt="Teamwork learned" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image17.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            Together they learned, as they whirled in a twirl,<br>
+            That teamwork’s the best in their Whizzy-Woo world!
+        </p>
+    </div>
+
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+        <p class="page-number text-sm mb-4">Page 18</p>
+        <img src="image18.png" alt="More quests" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image18.png';">
+        <p class="story-text text-base sm:text-lg text-center">
+            So Chicken and Banana, with a wink and a grin,<br>
+            Promised more quests where their fun would begin!
+        </p>
+    </div>
+
+</body>
+</html>
