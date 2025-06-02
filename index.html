@@ -34,13 +34,14 @@
 </head>
 <body class="flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
 
-    <div class="title-card w-full max-w-2xl mx-auto rounded-xl p-8 mb-12 text-center shadow-lg">
+    <!-- Book Cover as first page -->
+    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-8 mb-12 flex flex-col items-center title-card">
         <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Chicken and Banana's Wobbly Quest</h1>
         <p class="text-lg sm:text-xl font-semibold author-info mb-2">By Rocky Hollen and Jenn Krenik</p>
         <p class="text-md sm:text-lg author-info mb-2">Images by Cavin Krenik</p>
         <p class="text-md sm:text-lg author-info mb-2">Editing by the Collective Mind</p>
-        <p class="text-md sm:text-lg author-info">Published by L2 Publishing</p>
-        <img src="cover.png" alt="Chicken and Banana" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='cover.png';">
+        <p class="text-md sm:text-lg author-info mb-6">Published by L2 Publishing</p>
+        <img src="cover.png" alt="Chicken and Banana Book Cover" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='cover.png';">
     </div>
 
     <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
@@ -154,7 +155,7 @@
         </p>
     </div>
 
-    <div class="storybook-page w-full max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
+    <div class="storybook-page wfull max-w-2xl mx-auto rounded-xl p-6 mb-8 flex flex-col items-center">
         <p class="page-number text-sm mb-4">Page 12</p>
         <img src="image12.png" alt="Chicken dodged leaves" class="w-full h-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='image12.png';">
         <p class="story-text text-base sm:text-lg text-center">
@@ -216,6 +217,49 @@
             Promised more quests where their fun would begin!
         </p>
     </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-between w-full max-w-2xl mx-auto mb-8">
+        <button id="prevBtn" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded disabled:opacity-50" disabled>Previous</button>
+        <button id="nextBtn" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">Next</button>
+    </div>
+
+    <script>
+        const pages = document.querySelectorAll('.storybook-page');
+        let currentPage = 0;
+
+        function showPage(index) {
+            pages.forEach((page, i) => {
+                page.style.display = i === index ? 'flex' : 'none';
+            });
+            document.getElementById('prevBtn').disabled = index === 0;
+
+            // Hide "Next" button on last page, show otherwise
+            const nextBtn = document.getElementById('nextBtn');
+            if (index === pages.length - 1) {
+                nextBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = '';
+            }
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        // Show only the first page (cover) on load
+        showPage(currentPage);
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken and Banana's Wobbly Quest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Light blue background */
+            overflow: hidden;
+        }
+        .book {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            margin: auto;
+            perspective: 1500px;
+        }
+        .page {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .page img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .page-number {
+            color: #6b7280; /* Gray text for page number */
+            text-align: center;
+            margin: 10px 0;
+        }
+        .story-text {
+            color: #374151; /* Darker gray for story text */
+            line-height: 1.6;
+            text-align: center;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="book" id="storybook">
+        <div class="page" id="page1">
+            <p class="page-number">Page 1</p>
+            <img src="cover.png" alt="Chicken and Banana">
+            <p class="story-text">
+                In Whizzy-Woo Forest, where colors all zoom,<br>
+                Lived Chicken, a hen with a bright red plume!<br>
+                She clucked and she solved with a peck and a grin,<br>
+                So clever, so sprightly, her heart all a-spin.<br>
+                But Banana, oh my, with his glasses so round,<br>
+                Would trip and then tumble right down to the ground!<br>
+                His peel was so shiny, his heart was so cheery,<br>
+                He giggled and wiggled, though falling was dreary.
+            </p>
+        </div>
+        <div class="page" id="page2">
+            <p class="page-number">Page 2</p>
+            <img src="image1.png" alt="Chicken met Banana">
+            <p class="story-text">
+                One day on a path that was sparkly and bright,<br>
+                Chicken met Banana—oh, what a sight!<br>
+                “Why, hello!” clucked Chicken, “Let’s be pals, you and me!”<br>
+                Banana just beamed, “Yes, oh, yippee-dee-dee!”
+            </p>
+        </div>
+        <!-- Additional pages go here -->
+        <div class="page" id="page18">
+            <p class="page-number">Page 18</p>
+            <img src="image18.png" alt="More quests">
+            <p class="story-text">
+                So Chicken and Banana, with a wink and a grin,<br>
+                Promised more quests where their fun would begin!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#storybook").turn({
+                width: 800,
+                height: 600,
+                autoCenter: true
+            });
+        });
+    </script>
+
+</body>
+</html>
